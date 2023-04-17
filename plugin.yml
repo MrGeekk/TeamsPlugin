@@ -1,0 +1,8 @@
+main: fr.mrgeekk.nationsrunner.main
+name: nationsrunner
+author: mrgeekk
+version: 1
+
+commands:
+ teams:
+ points:
