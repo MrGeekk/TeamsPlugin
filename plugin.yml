@@ -1,6 +1,6 @@
-main: fr.mrgeekk.nationsrunner.main
-name: nationsrunner
-author: mrgeekk
+main: fr.mrgeekk.event.main
+name: NationsEvent
+author: MrGeekk
 version: 1
 
 commands:

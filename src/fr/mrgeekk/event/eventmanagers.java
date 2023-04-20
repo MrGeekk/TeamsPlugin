@@ -1,10 +1,10 @@
-package fr.mrgeekk.nationsrunner;
+package fr.mrgeekk.event;
 
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.PluginManager;
 
-import fr.mrgeekk.nationsrunner.events.playerchat;
-import fr.mrgeekk.nationsrunner.events.playerjoin;
+import fr.mrgeekk.event.events.playerchat;
+import fr.mrgeekk.event.events.playerjoin;
 
 public class eventmanagers {
 

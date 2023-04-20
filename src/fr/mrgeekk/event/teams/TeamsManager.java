@@ -1,10 +1,10 @@
-package fr.mrgeekk.nationsrunner.teams;
+package fr.mrgeekk.event.teams;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-import fr.mrgeekk.nationsrunner.dbmanager;
+import fr.mrgeekk.event.dbmanager;
 
 public class TeamsManager {
 	

@@ -1,4 +1,4 @@
-package fr.mrgeekk.nationsrunner;
+package fr.mrgeekk.event;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

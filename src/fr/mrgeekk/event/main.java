@@ -1,9 +1,9 @@
-package fr.mrgeekk.nationsrunner;
+package fr.mrgeekk.event;
 
 import org.bukkit.plugin.java.JavaPlugin;
 
-import fr.mrgeekk.nationsrunner.teams.PointCommand;
-import fr.mrgeekk.nationsrunner.teams.teamsCommands;
+import fr.mrgeekk.event.teams.PointCommand;
+import fr.mrgeekk.event.teams.teamsCommands;
 
 public class main extends JavaPlugin{
 	
@@ -13,7 +13,7 @@ public class main extends JavaPlugin{
 	@Override
 	public void onEnable() {
 		instance = this;
-		System.out.println("[NationsRunner] Enable");
+		System.out.println("[NationsEvent] Enable");
 		new eventmanagers().register();
 		
 		getCommand("teams").setExecutor(new teamsCommands());
@@ -27,7 +27,7 @@ public class main extends JavaPlugin{
 	@Override
 	public void onDisable() {
 
-		System.out.println("[NationsRunner] Disable");
+		System.out.println("[NationsEvent] Disable");
 		data.deconnection();
 				
 		super.onDisable();

@@ -1,4 +1,4 @@
-package fr.mrgeekk.nationsrunner.teams;
+package fr.mrgeekk.event.teams;
 
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
@@ -12,14 +12,14 @@ public class PointCommand implements CommandExecutor {
 		if(label.equalsIgnoreCase("points")) {
 			
 			if(args.length < 1) {
-				sender.sendMessage("§7[NationsRunner] Usage: /points set/get");
+				sender.sendMessage("§7[NationsEvent] Usage: /points set/get");
 				return false;
 			}
 			
 			if(args[0].equalsIgnoreCase("set")) {
 				
 				if(args.length < 3) {
-					sender.sendMessage("§7[NationsRunner] Usage: /points set <player> <points>");
+					sender.sendMessage("§7[NationsEvent] Usage: /points set <player> <points>");
 					return false;
 				}
 				
@@ -27,20 +27,20 @@ public class PointCommand implements CommandExecutor {
 				int point = Integer.parseInt(args[2]);
 				
 				new points().setpoint(player, point);
-				sender.sendMessage("§7[NationsRunner] Modification effectuées");
+				sender.sendMessage("§7[NationsEvent] Modification effectuées");
 				
 			}
 			
 			if(args[0].equalsIgnoreCase("get")) {
 				
 				if(args.length < 2) {
-					sender.sendMessage("§7[NationsRunner] Usage: /points get <player>");
+					sender.sendMessage("§7[NationsEvent] Usage: /points get <player>");
 					return false;
 				}
 				
 				String player = args[1];
 				
-				sender.sendMessage("§7[NationsRunner] Le joueur a " + new points().getpoint(player) + " points");
+				sender.sendMessage("§7[NationsEvent] Le joueur a " + new points().getpoint(player) + " points");
 				return false;
 			}
 		}
